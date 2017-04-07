@@ -1,0 +1,12 @@
+.main-wrapper {
+    height: 100%;
+    width: 100%;   
+}
+#novosib-logo {
+    width: auto;
+    max-width: 60%;
+    height: auto;
+}
+.underlined {
+    text-decoration: underline;
+}
