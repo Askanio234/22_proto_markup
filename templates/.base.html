@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="Ru">
+
+<head>
+	<link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+	<title>{{ title }}</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="main-wrapper">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a href="#" class="navbar-left"><img id = "novosib-logo" src="http://novo-sibirsk.ru/img/common/logo.jpg" alt="Novosib logo"></a>
+		      <a class="navbar-brand" href="#"></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Регион: <span class="sr-only">(current)</span></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle underlined" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Новосибирск и область <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Регион№1</a></li>
+		            <li><a href="#">Регион№2</a></li>
+		            <li><a href="#">Регион№3</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Что-то другое</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Что-то совсем другое</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="underlined"><a href="#">{{ user_name }}</a></li>
+		        <li class="underlined"><a href="#">Выход</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		{% block content %}
+		{% endblock %}
+		<!-- Search -->
+		<div class="suppliers-left">
+			<ul>
+				<li class="inline">Участники в новосибирске: </li>
+				<li class="inline underlined"><a href="#">105 Оптовых компаний</a></li>
+				<li class="inline underlined"><a href="#">25 производителей</a></li>
+			<ul>
+		</div>
+		<div class="text-center">
+			<h1>ВАМ ПОЗВОНЯТ ЛУЧШИЕ</h1>
+			<h1>ПОСТАВЩИКИ НОВОСИБИРСКА</h1>
+		</div>
+		<div id="search-block">
+			<h2>Я ищу:</h2>
+			<div class="margin-left">
+				<div class="checkbox">
+	  				<label><input type="checkbox" value="">ЖБИ (фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки)</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input type="checkbox" value="">Кирпич / Газобетон / БРУС</label>
+				</div>
+				<div class="checkbox">
+	  				<label><input type="checkbox" value="">Бетон / Раствор</label>
+				</div>
+				<div class="dropdown">
+  					<button class="btn btn-primary dropdown-toggle underlined override-to-grey" id="search-region-btn" type="button" data-toggle="dropdown">Новосибирск и область
+  					<span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu">
+    					<li><a href="#">Регион№1</a></li>
+    					<li><a href="#">Регион№2</a></li>
+    					<li><a href="#">Регион№3</a></li>
+  					</ul>
+				</div> 
+			</div>
+			<form>
+				<div class="input-group">
+    				<span class="input-group-addon description-field override-to-grey">Описание *</span>
+    				<input id="msg" type="text" class="form-control" name="msg" placeholder="Пример: нужно фбс и плиты 60-12-20 с доставкой в Новоуглевое">
+  				</div>
+			</form>
+			 <form class="form-inline">
+			 	<div class="input-group">
+    				<span class="input-group-addon description-field override-to-grey">Телефон *</span>
+    				<input id="msg" type="text" class="form-control" name="msg" placeholder="8-800-5555">
+  				</div>
+			  	<div class="input-group floating-right">
+    				<span class="input-group-addon override-to-grey">Имя *</span>
+    				<input id="msg" type="text" class="form-control" name="msg" placeholder="Федор Иванович">
+  				</div>
+			</form>
+		</div>
+		<!--End of Search -->
+		<!-- New Indents -->
+		<div id="new_indents">
+			<h1 class="text-center">Свежие заявки</h1>
+				<div class="dropdown inline">
+	  				<button class="btn btn-primary dropdown-toggle underlined override-to-white" id="search-region-btn" type="button" data-toggle="dropdown">Раздел: Все
+	  				<span class="caret"></span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="#">ЖБИ</a></li>
+	    				<li><a href="#">Кирпич/газобетон/брус</a></li>
+	    				<li><a href="#">Бетон/раствор</a></li>
+	  				</ul>
+	  				</div>
+				<div class="dropdown inline">
+  					<button class="btn btn-primary dropdown-toggle underlined override-to-white floating-right" id="search-region-btn" type="button" data-toggle="dropdown">Регион: Новосибирск и область
+  					<span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu">
+    					<li><a href="#">Регион№1</a></li>
+    					<li><a href="#">Регион№2</a></li>
+    					<li><a href="#">Регион№3</a></li>
+  					</ul>
+				</div>  
+			</div>
+			<!--end of new Indents -->
+		</div>
+		
+		<footer>
+			<script src="../js/jquery.js" type="text/javascript"></script>
+    		<script src="../js/bootstrap.js" type="text/javascript"></script>
+		</footer>
+	</div>
+</body>
+</html>
