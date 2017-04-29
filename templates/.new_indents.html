@@ -1,0 +1,59 @@
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="new_indents">
+					<h1 class="text-center">СВЕЖИЕ ЗАЯВКИ</h1>
+					<div class="row">
+						<div class="col-xs-4 col-md-6">
+							<div class="dropdown">
+								Раздел:
+			  					<button class="btn btn-primary dropdown-toggle indent-btn" type="button" data-toggle="dropdown">Все
+			  						<span class="caret"></span>
+			  					</button>
+			  					<ul class="dropdown-menu">
+			    					<li><a href="#">Раздел№1</a></li>
+			    					<li><a href="#">Раздел№2</a></li>
+			    					<li><a href="#">Раздел№3</a></li>
+			  					</ul>
+							</div> 
+						</div>
+						<div class="col-xs-4 col-md-6 text-right">
+							<div class="dropdown">
+								Регион:
+			  					<button class="btn btn-primary dropdown-toggle indent-btn" type="button" data-toggle="dropdown">Новосибирск и область
+			  						<span class="caret"></span>
+			  					</button>
+			  					<ul class="dropdown-menu">
+			    					<li><a href="#">Регион№1</a></li>
+			    					<li><a href="#">Регион№2</a></li>
+			    					<li><a href="#">Регион№3</a></li>
+			  					</ul>
+							</div> 
+						</div>
+					</div>
+					{% for indent in range(indents) %}
+					<div class="row">
+						<div class="request col-md-12">
+							 <div class="row">
+                				<div class="col-md-6">
+                    				<p class="text-muted">вчера, 21.30</p>
+                				</div>
+                				<div class="col-md-6 text-right">
+                    				<span class="underlined">&#9733; В закладки</span>
+                				</div>
+            				</div>
+            				<p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка с доставкой</p>
+            				<p class="name">Алексей</p>
+            				<button type="submit" class="btn btn-default">Показать телефон</button>
+            				<span class="text-muted">12 просмотров</span>
+						</div>
+					</div>
+					{% endfor %}
+					<div class="row">
+						<div class="col-md-4 col-md-offset-5 col-xs-6 col-xs-offset-3" id="btn-all-indents">
+							<a href="#" class="btn btn-default text-center">Посмотреть все заявки</a>
+						</div>
+					</div>
+				</div>
+					
+				</div>
+			</div>
