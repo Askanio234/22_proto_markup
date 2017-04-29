@@ -45,9 +45,9 @@ h2 {
 .reviews {
     margin-top: 2%;
 }
-#user-pic {
+.user-pic {
     text-align: center;
-    vertical-align: middle;
+    margin-top: 2%;
     font-size: 2em;
 }
 .carousel-inner {
@@ -70,7 +70,7 @@ border: 3px solid #b3b3b3;
     top: 25px;
 }
 #add-review-btn {
-    display: inline;
+    margin: 20px auto;
 }
 #contact-header {
     margin-top: 2%;
