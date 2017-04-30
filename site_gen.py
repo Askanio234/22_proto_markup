@@ -5,8 +5,7 @@ requests_data = {
     'title': 'Заявки',
     "indents_title": "Заявки",
     'user_name': 'Леонид Федорович',
-    'indents': 10,
-    "final_button_name": "Показать еще"
+    'indents': 10
 }
 
 if __name__ == '__main__':
