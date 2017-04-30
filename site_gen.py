@@ -4,8 +4,9 @@ import staticjinja
 index_data = {
 	"title": "Главная",
 	"indents_title": "Свежие заявки",
+	"page": "index.html",
 	"user_name": "Леонид Федорович",
-	"indents": 10
+	"indents": 7,
 }
 
 
