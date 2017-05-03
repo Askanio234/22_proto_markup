@@ -88,3 +88,8 @@ border: 3px solid #b3b3b3;
 .footer-btn {
     margin-top: 2%;
 }
+@media screen and (min-width: 992px) {
+    #right-dropdown {
+        text-align: right;
+    }
+}
