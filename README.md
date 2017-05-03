@@ -8,11 +8,11 @@
 pip install -r requirements.txt
 
 ```
-## Запуск на Linux:
+## Запуск:
 
 ```#!bash
 
-$ E:\Users\user\Documents\projects\22_site_generator>python site_gen.py 
+python site_gen.py 
 
 ```
 Пример готового сайта [Здесь](https://askanio234.github.io/22_proto_markup/site/index.html)
