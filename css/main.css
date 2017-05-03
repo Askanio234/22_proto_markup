@@ -61,13 +61,13 @@ border: 3px solid #b3b3b3;
 }
 .carousel-control.right{
     position: absolute;
-    right: 10%;
+    right: 0%;
     top: 25px;
 }
 
 .carousel-control.left {
     position: absolute;
-    left: 10%;
+    left: 0%;
     top: 25px;
 }
 #add-review-btn {
@@ -88,11 +88,23 @@ border: 3px solid #b3b3b3;
 .footer-btn {
     margin-top: 2%;
 }
+.review-text {
+    text-align: center;
+}
+
 @media screen and (min-width: 992px) {
     #right-dropdown {
         text-align: right;
     }
     #right-element {
         text-align: right;
+    }
+    .carousel-control.right{
+    position: absolute;
+    right: 10%;
+    }
+    .carousel-control.left {
+    position: absolute;
+    left: 10%;
     }
 }
